@@ -20,7 +20,7 @@ const PrincipalRoute: FC = () => {
                     />}
                 />
 
-                <Route path='login' element={<LoginPage />} />
+                <Route path='login' element={<LoginPage isAuth={isAuth} />} />
             </Routes>
         </BrowserRouter>
     )

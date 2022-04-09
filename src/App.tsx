@@ -1,12 +1,19 @@
 import React, { FC } from 'react';
 import PrincipalRoute from './routes/PrincipalRoute';
 import './App.css';
+import NavHeader from './components/NavHeader';
+import { Container } from 'react-bootstrap'
 
-export interface IApp { }
+type AppProps = {};
 
-const App: FC<IApp> = () => {
+const App: FC<AppProps> = () => {
   return (
-    <PrincipalRoute />
+    <>
+      <NavHeader />
+      <Container fluid>
+        <PrincipalRoute />
+      </Container>
+    </>
   );
 }
 

@@ -1,10 +1,11 @@
 import React, { FunctionComponent } from "react";
+import { Button } from "react-bootstrap";
 
-export interface IButtonCustom {}
+export interface IButtonCustom { }
 
 
 const ButtonCustom: FunctionComponent<IButtonCustom> = () => {
-  return <button>Es el boton custom</button>;
+  return <Button>Es el boton custom</Button>;
 };
 
 export default ButtonCustom;
